@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "app_bluenrg.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -103,6 +103,7 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
   	  /*1. Enable BLE*/
+  bluenrg_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -116,7 +117,7 @@ int main(void)
 
 
 	  /*1. Process BLE*/
-
+	  bluenrg_process();
 
 
   }
